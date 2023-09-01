@@ -19,12 +19,37 @@ namespace stockProject
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new Bundle("~/bundles/bootstrap").Include(
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            // Ana stiller
+            bundles.Add(new StyleBundle("~/bundles/mainStyle").Include(
+                        //"~/Content/bootstrap.min.css",
+                        "~/Content/bootstrap.css",
+                        //"~/Content/mdb.min.css"
+                        "~/Content/mdb.css"
+                        ));
+
+            bundles.Add(new StyleBundle("~/bundles/datatableCss").Include(
+                        "~/Content/Datatable/datatables.min.css"
+                        ));
+
+            // Ana scriptler
+            bundles.Add(new ScriptBundle("~/bundles/mainScript").Include(
+                        "~/Scripts/jquery-3.4.1.min.js",
+                        "~/Scripts/popper.min.js",
+                        "~/Scripts/bootstrap.min.js",
+                        "~/Scripts/mdb.min.js",
+                        "~/Scripts/moment.js"
+                        ));
+
+            bundles.Add(new ScriptBundle("~/bundles/datatableScript").Include(
+                        "~/Scripts/Datatable/datatables.min.js"
+                        ));
         }
     }
 }
