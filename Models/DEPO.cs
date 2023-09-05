@@ -25,8 +25,8 @@ namespace stockProject.Models
         public bool STATU { get; set; }
         public int OLUSTURAN_KULLANICI { get; set; }
         public System.DateTime OLUSTURMA_TARIHI { get; set; }
-        public Nullable<System.DateTime> GUNCELLEME_TARIHI { get; set; }
         public Nullable<int> GUNCELLEYEN_KULLANICI { get; set; }
+        public Nullable<System.DateTime> GUNCELLEME_TARIHI { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DEPO_ESLESTIRME> DEPO_ESLESTIRME { get; set; }

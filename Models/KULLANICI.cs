@@ -23,13 +23,13 @@ namespace stockProject.Models
             this.DEPO1 = new HashSet<DEPO>();
             this.DEPO_ESLESTIRME = new HashSet<DEPO_ESLESTIRME>();
             this.DEPO_ESLESTIRME1 = new HashSet<DEPO_ESLESTIRME>();
-            this.SORUMLU = new HashSet<SORUMLU>();
-            this.SORUMLU1 = new HashSet<SORUMLU>();
             this.STOK_DURUM = new HashSet<STOK_DURUM>();
             this.STOK_DURUM1 = new HashSet<STOK_DURUM>();
-            this.STOK = new HashSet<STOK>();
+            this.SORUMLU = new HashSet<SORUMLU>();
+            this.SORUMLU1 = new HashSet<SORUMLU>();
             this.STOK_HAREKET = new HashSet<STOK_HAREKET>();
             this.STOK_HAREKET1 = new HashSet<STOK_HAREKET>();
+            this.STOK = new HashSet<STOK>();
             this.STOK1 = new HashSet<STOK>();
         }
     
@@ -57,21 +57,21 @@ namespace stockProject.Models
         public virtual ICollection<DEPO_ESLESTIRME> DEPO_ESLESTIRME { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DEPO_ESLESTIRME> DEPO_ESLESTIRME1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<STOK_DURUM> STOK_DURUM { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<STOK_DURUM> STOK_DURUM1 { get; set; }
         public virtual KULLANICI_TIP KULLANICI_TIP { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SORUMLU> SORUMLU { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SORUMLU> SORUMLU1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<STOK_DURUM> STOK_DURUM { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<STOK_DURUM> STOK_DURUM1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<STOK> STOK { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<STOK_HAREKET> STOK_HAREKET { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<STOK_HAREKET> STOK_HAREKET1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<STOK> STOK { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<STOK> STOK1 { get; set; }
     }

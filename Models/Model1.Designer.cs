@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\STAJYER-1\source\repos\stockProject\Models\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\ASUS\Desktop\C# ASP.NET\StokTakip\stockProject\Models\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

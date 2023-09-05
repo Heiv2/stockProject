@@ -32,11 +32,11 @@ namespace stockProject.Models
     
         public virtual ALT_DEPO ALT_DEPO { get; set; }
         public virtual DEPO DEPO { get; set; }
-        public virtual KULLANICI KULLANICI { get; set; }
-        public virtual KULLANICI KULLANICI1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<STOK_DURUM> STOK_DURUM { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<STOK_HAREKET> STOK_HAREKET { get; set; }
+        public virtual KULLANICI KULLANICI { get; set; }
+        public virtual KULLANICI KULLANICI1 { get; set; }
     }
 }
